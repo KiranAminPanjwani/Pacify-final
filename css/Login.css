@@ -12,10 +12,7 @@
 
 body {
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 135vh;
   background-color: #e6ffee;
   font-family: "Nunito", sans-serif;
 }
@@ -152,13 +149,24 @@ body {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.619);
+.man {
+  animation-name: slideIn;
+  animation-duration: 1s;
+}
 
-  background-color: #fbfbfb;
+@keyframes slideIn {
+  0% {
+    margin-bottom: -100%;
+  }
+  100% {
+    margin-bottom: 0%;
+  }
 }
 
 @media (max-width: 576px) {
+  
   .bgimg {
     height: 200vh;
   }
@@ -185,9 +193,12 @@ body {
 }
 
 .questions {
-  width: 80%;
-  padding: 10px;
+  /* width: 80%; */
+  padding: 20px;
 
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.619);
+
+  background-color: #fbfbfb;
 }
 
 /* ---------------------------------------------------------------- */
